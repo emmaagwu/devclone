@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Helvetica, Sans-Serif;
+    color: #000000;
+    background-color: #f5f5f5;   
+}
+
+.top_bar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+}
+.item:nth-child(2) {
+    margin-right: auto;
+}
+  
+.item:nth-child(3) {
+    margin-left: auto;
+}
+
+.hamburger-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 20px; 
+    margin: 0px 8px;   
+}
+
+.hamburger-button:hover,
+.fa-magnifying-glass:hover
+{
+    background-color: #eee;
+    color: #3B49DF;
+}
+
+.header_logo{
+    width: 50px;
+    height: 40px;
+}
+
+.fa-magnifying-glass {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+    margin: 0 4px;
+}
+.fa:hover{
+   background-color: #444444; 
+}
+.account{
+    border: 1px solid #3B49DF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 8px 0 0;
+    padding: 10px 15px;
+}
+.account:hover {
+    background-color: #3B49DF;    
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*Ribbon styling*/
+
+.ribbon {
+    width: 100vw;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+.ribbon>a {
+    text-decoration: none;
+    color: #444444;
+    padding: 8px;
+    border-radius: 5px;    
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400
+}
+.ribbon>a:nth-child(1){
+    font-weight: 700
+}
+.ribbon>a:hover{    
+    color: rgb(59, 73, 223);
+}
+.ribbon>a:nth-child(1):hover{
+    background-color: #ffffff;
+}
+button{
+    width: 30px;
+    height: 30px;
+}
+
+/* main container styling */
+
+main {
+    display: grid;
+    gap: 12px;
+}
+
+/* daily byte styling*/ 
+
+.daily_Byte_container{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid sienna; */
+
+}
+
+.daily_Byte_container a{
+    text-decoration: none;
+    color: #000000;
+
+}
+.daily_Byte_container p{
+    font-size: 0.8rem;
+}
+.daily_Byte_img{
+    width: 100vw;
+    height: 170px;    
+}
+
+.daily_byte_message{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.byte_img_banner{
+    width: 90vw;   
+    display: flex;    
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.daily_byte_author{
+    position: relative;
+}
+
+.author_square_image{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;   
+}
+
+.author_round_image{
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -2px;
+    left: 20px
+}
+
+.flex_item button {
+    width: auto;
+    padding: 0;
+    margin: 0 4px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.daily_byte_indented{
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reactions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-comment{
+    /* width: 5px; */
+    /* height: 5px; */
+    color: #000000;
+}
+
+.dev_community{
+    background-color: #ffffff;
+}
+
+/* Dev community section styling */
+
+.dev_community{
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 
+        0 4px 3px -3px rgba(0, 0, 0, 0.2),
+        0 -4px 3px -3px rgba(0, 0, 0, 0.2);  
+}
+
+.top_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dev_community_tag{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.top_row button{
+    border: none;
+    text-align: center;
+    background: transparent;
+}
+
+.fa-ellipsis{
+    width: 4px;
+    height: 4px;
+    color: #000000;
+    font-size: 1.2rem;    
+}
+
+.dev_community_image{
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+    border-radius: 8px;
+}
