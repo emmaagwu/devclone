@@ -190,6 +190,7 @@ main {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    background: transparent;
 }
 
 .daily_byte_indented{
@@ -256,4 +257,20 @@ main {
     height: auto;
     margin: 8px 0;
     border-radius: 8px;
+}
+
+.dev_community .bold{
+    font-size: 1.5rem;
+    font-weight: 700;        
+}
+
+.dev_community p:nth-child(4){
+    margin: 8px 0;
+}
+
+.dev_community p:nth-child(5){
+    margin: 8px 0;
+}
+.dev_community p:nth-child(7){
+    margin: 9px 0;
 }
