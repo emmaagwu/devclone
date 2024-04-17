@@ -10,8 +10,102 @@
 </head>
 <body>
 
+    <!-- side bar -->
+
+    <aside class="side_bar" id="mySidebar">
+        <div class="ribbon">
+            <p class="aside_title">
+                 DEV Community
+            <p>
+            <button type="button" class="closebtn" onclick="closeNav()">
+                 <i class="fa-solid fa-x"></i>              
+            </button>
+        </div>      
+        <div class="aside_header">            
+            <p class="aside_h2">DEV Community is a community 
+                of 1,408,124 amazing developers
+            </p>
+            <p>
+                We're a place where coders share, 
+                stay up-to-date and grow their careers. 
+            </p>
+            <a href="#" class="account">Create account</a>
+            <a href="#"> log in</a>
+        </div>
+
+        <div class="aside_nav">
+            <a href="#">
+               <img src="" alt="">
+               Home
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Reading List
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Podcast
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Videos
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Tags
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Dev help
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Forem Shop
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               Advertise on DEV
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               DEV Showcase
+            </a>
+            <a href="#">
+               <img src="" alt="">
+               About
+            </a>
+
+            <p>Other</p>
+            
+            <a href="#">
+                <img src="" alt="">
+                Code of Conduct
+             </a>
+            <a href="#">
+                <img src="" alt="">
+                Privacy Policy
+             </a>
+            <a href="#">
+                <img src="" alt="">
+                Terms of use
+             </a>
+
+            <div class="brand_icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitch"></i>
+                <i class="fa-brands fa-mastodon"></i>
+            </div>
+            
+
+        </div>
+    </aside>
+   
+<!-- main body -->
     <header class="top_bar">
-        <button class="hamburger-button" aria-label="Menu">
+        <button class="hamburger-button" aria-label="Menu" class="openbtn" onclick="openNav()">
             <i class="fa-solid fa-bars" class="item"></i>
         </button>
         <a href="#" class="item">
@@ -86,12 +180,16 @@
                     <h2><a class="daily_byte_title" href="#">
                         Congrats to the Cloudflare AI Challenge Winners!</a>
                     </h2>
-                    <div
-                    <a href="#">#discuss</a>
+                    <div class="hashtags">
+                        <a href="#">#cloudflarechallenge</a>
+                        <a href="#">#devchallenge</a>
+                        <a href="#">#ai</a>
+                        <a href="#">#serverless</a>
+                    </div>
                     <div class="reactions">
-                        <p>5 reactions</p>
-                        <p><i class="fa-regular fa-comment"></i> 5</p>                    
-                        <p>1 min read</p>
+                        <p>134 reactions</p>
+                        <p><i class="fa-regular fa-comment"></i> 26</p>                    
+                        <p>3 min read</p>
                         <i class="fa-regular fa-bookmark"></i>
                     </div>               
                 </div>
@@ -113,13 +211,16 @@
                     </div>
                 </div>                        
                 <div class="daily_byte_indented">
-                    <h2><a class="daily_byte_title" href="#">How Do You Define "Meaningful Work?"</a>
+                    <h2><a class="daily_byte_title" href="#">AI "interviewer"...I rarely want companies to fail but...</a>
                     </h2>
-                    <a href="#">#discuss</a>
+                    <div class="flex_item">  
+                        <a href="#">#webdev</a>
+                        <a href="#">#ai</a>
+                    </div>
                     <div class="reactions">
-                        <p>5 reactions</p>
-                        <p><i class="fa-regular fa-comment"></i> 5</p>                    
-                        <p>1 min read</p>
+                        <p>50 reactions</p>
+                        <p><i class="fa-regular fa-comment"></i> 11</p>                    
+                        <p>7 min read</p>
                         <i class="fa-regular fa-bookmark"></i>
                     </div>               
                 </div>
@@ -141,7 +242,8 @@
                     </div>
                 </div>                        
                 <div class="daily_byte_indented">
-                    <h2><a class="daily_byte_title" href="#">How Do You Define "Meaningful Work?"</a>
+                    <h2><a class="daily_byte_title" href="#">
+                        30+ app ideas with complete source code</a>
                     </h2>
                     <a href="#">#discuss</a>
                     <div class="reactions">
@@ -350,5 +452,18 @@
             </div>
         </article> 
     </main>
+    
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.display = "none";
+          console.log("I am here");
+        }
+    </script>
 </body>
 </html>
