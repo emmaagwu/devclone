@@ -274,3 +274,10 @@ main {
 .dev_community p:nth-child(7){
     margin: 9px 0;
 }
+
+/* styles for the articles */
+
+article a{
+    text-decoration: none;
+    color: #000000;
+}
